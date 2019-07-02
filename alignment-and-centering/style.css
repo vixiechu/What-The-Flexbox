@@ -35,10 +35,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   min-height: 100vh;
   flex-direction: row; /* row is default - controls main axis col-top to bottom row-left to right*/
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .box {
-  width: 33.333%;
+  width: 300px;
 }
 
 .box2 {
