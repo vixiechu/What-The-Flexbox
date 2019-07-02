@@ -31,26 +31,22 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
-  border: 10px solid black;
-  min-height: 100vh;
-  flex-direction: row; /* row is default - controls main axis col-top to bottom row-left to right*/
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .box {
-  width: 300px;
+  flex: 1; /* distributes equally */
+  order: 1;
 }
 
-.box2 {
-  padding-bottom: 200px;
-}
-
-.box6 {
-  padding-bottom: 0;
+.box4 {
+  order: 3; /* default order - zero */ 
 }
 
 .box9 {
-  padding-bottom: 50px;
-  align-self:stretch;
+  order: 2;
 }
+
+.box2 {
+  order: -1; /* negatives work too */
+}
+/* copies/highlights in order - do not use for things when users copy text */ 
