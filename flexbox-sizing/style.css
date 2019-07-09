@@ -18,25 +18,31 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Colours for each box */
 .box1 { background:#808000;}
 .box2 { background:#800000;}
-.box3 { background:#ffd8b1;}
+.box3 { background:#000075;}
 .box4 { background:#010101;}
 .box5 { background:#8f8d86;}
 .box6 { background:#469999;}
 .box7 { background:#e61a04;}
 .box8 { background:#bdc3c7;}
 .box9 { background:#3cb44b;}
-.box10 { background:#000075;}
+.box10 { background:#ffd8b1;}
 
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-  display:flex;
+  display: flex;
 }
 
+/* what to do with the remaining space - flex property */ 
+
 .box {
-  flex:1;
+  flex: 1; /* split remaining space between items equally */
 }
 
 .box2 {
-  flex:2;
+  flex: 2; /* 2x bigger due to twice as much remaining space */ 
+}
+
+.box5 {
+  flex: 3; /* bigger yet as more remaining space allocated */ 
 }
