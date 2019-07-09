@@ -2,7 +2,7 @@
 
 ## What is this repo?
 
-My completed course files for the 'What the Flexbox?!' Course offered by Wes Bos. I decided to take this course to ensure I understood all the aspects of Flexbox, rather than bits and bobs when applied practically. 
+My completed course files for the 'What the Flexbox?!' course offered by Wes Bos. I decided to take this course to ensure I understood all the aspects of Flexbox, rather than bits and bobs when applied practically. 
 
 Check it out yourself here -> [https://flexbox.io/] 
 
