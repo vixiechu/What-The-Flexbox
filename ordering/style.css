@@ -33,13 +33,25 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box {
-  flex:1;
+  height: 200px;
+  flex: 1; /* distributes equally */
+  order: 1;
 }
 
-.box3 {
-  order:1;
+.box4 {
+  height: 60px;
+  align-self: flex-end;
+  order: 3; /* default order - zero */ 
 }
 
-.box5 {
-  order:2;
+.box9 {
+  height: 100px;
+  order: 2;
 }
+
+.box2 {
+  height: 30px;
+  align-self: flex-end;
+  order: -1; /* negatives work too */
+}
+/* copies/highlights in order - do not use for things when users copy text */ 
