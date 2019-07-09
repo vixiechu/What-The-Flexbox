@@ -17,4 +17,5 @@ There is not much to set up - just open the file in your browser of preference, 
 My simple set up; 
 
 Compiler: `Visual Studio Code`
+
 Browser: `Firefox Developer Edition` 
