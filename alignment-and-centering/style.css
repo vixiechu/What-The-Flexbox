@@ -28,16 +28,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box10 { background:#000075;}
 
 
-/* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
   border: solid 2px black;
-  align-items:baseline;
+  align-items: baseline;
   min-height: 100vh;
+  flex-wrap: wrap;
  /* justify-content: space-between;
-  flex-direction: column;
-
   */
+  align-content: center;
 }
 
 .box {
@@ -48,6 +47,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box4 {
   height: 60px;
+  align-self: flex-end;
   order: 3; /* default order - zero */ 
 }
 
@@ -58,6 +58,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .box2 {
   height: 30px;
+  align-self: flex-end;
   order: -1; /* negatives work too */
 }
 /* copies/highlights in order - do not use for things when users copy text */ 
@@ -66,9 +67,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box5 {
+  align-self: flex-end;
   height: 80px;
 }
 
 .box10 {
+  align-self: flex-end;
   height: 75px;
 }
