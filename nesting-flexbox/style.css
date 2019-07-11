@@ -10,62 +10,61 @@ html {
 body {
   font-family: sans-serif;
   margin: 0;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  background-image: linear-gradient(260deg, #34495e 0%, #16a085 100%);
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding:50px;
+  padding: 50px;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 a {
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: 15px;
-  background:rgba(0,0,0,0.2);
-  padding:20px 5px;
+  background: rgba(0,0,0,0.2);
+  padding: 20px 5px;
 }
 a:hover {
-  background:rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.4);
 }
 
-/* our flex container */
+
 .slider-nav ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display:flex;
+  padding: 0; 
+  display: flex;
 }
-
-/* our first flex item */
+/* first item of nested */ 
 .slider-nav li {
-  flex:2; /* THis is flex item -ish */
+  flex: 2;
+  border: 1px solid #4C4A48;
   text-align: center;
-  display:flex; /* This is flex container -ish */
-}
-
-.slider-nav .arrow {
-  flex:1;
+  display: flex; /* nested container */
 }
 
 .arrow a {
-  font-size: 30px;
+  font-size: 2.5rem; /* won't mess up vertical centering with flexbox */ 
+}
+
+.slider-nav .arrow {
+  flex: 1;
 }
 
 .slider-nav a {
-  flex-basis:100%;
-  display:flex;
-  align-items:center;
-  /*We want to stretch as well and center*/
+  flex-basis: 100%;
+  display: flex; /* stretch as well as center */
+  align-items: center;
 }
 
-/* This is the flex item */
 .slider-nav span {
   display: block;
   width: 100%;
 }
+
